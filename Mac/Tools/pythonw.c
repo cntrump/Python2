@@ -111,6 +111,9 @@ setup_spawnattr(posix_spawnattr_t* spawnattr)
 #if defined(__ppc64__)
     cpu_types[0] = CPU_TYPE_POWERPC64;
 
+#elif defined(__arm64__)
+    cpu_types[0] = CPU_TYPE_ARM64;
+
 #elif defined(__x86_64__)
     cpu_types[0] = CPU_TYPE_X86_64;
 

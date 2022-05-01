@@ -6128,7 +6128,7 @@ $as_echo "$CC" >&6; }
                ARCH_RUN_32BIT=""
                ;;
             64-bit)
-               UNIVERSAL_ARCH_FLAGS="-arch ppc64 -arch x86_64"
+               UNIVERSAL_ARCH_FLAGS="-arch arm64 -arch x86_64"
                LIPO_32BIT_FLAGS=""
                ARCH_RUN_32BIT=""
                ;;
@@ -8471,8 +8471,8 @@ fi
     	i386)
     		MACOSX_DEFAULT_ARCH="x86_64"
     		;;
-    	ppc)
-    		MACOSX_DEFAULT_ARCH="ppc64"
+    	arm64)
+    		MACOSX_DEFAULT_ARCH="arm64"
     		;;
     	*)
     		as_fn_error $? "Unexpected output of 'arch' on OSX" "$LINENO" 5

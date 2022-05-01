@@ -1,3 +1,9 @@
+Build Python2.framework for Arm64 and x86_64 on macOS
+
+./configure --without-gcc --with-framework-name=Python2 \
+            --enable-unicode=ucs4 --enable-ipv6 --enable-toolbox-glue --enable-optimizations \
+            --enable-framework --enable-universalsdk --with-universal-archs=64-bit
+
 This is Python version 2.7.17
 =============================
 
@@ -274,7 +280,7 @@ A number of systems are not supported in Python 2.7 anymore. Some
 support code is still present, but will be removed in later versions.
 If you still need to use current Python versions on these systems,
 please send a message to python-dev@python.org indicating that you
-volunteer to support this system. For a more detailed discussion 
+volunteer to support this system. For a more detailed discussion
 regarding no-longer-supported and resupporting platforms, as well
 as a list of platforms that became or will be unsupported, see PEP 11.
 
@@ -613,7 +619,7 @@ macOS:  Building a complete Python installation requires the use of various
         additions.
 
         Some people have reported problems building Python after using "fink"
-        to install additional unix software. Disabling fink (remove all 
+        to install additional unix software. Disabling fink (remove all
         references to /sw from your .profile or .login) should solve this.
 
 Cygwin: With recent (relative to the time of writing, 2001-12-19)
@@ -708,7 +714,7 @@ To build the sqlite3 module, you'll need the sqlite3 or libsqlite3
 packages installed, including the header files. Many modern operating
 systems distribute the headers in a separate package to the library -
 often it will be the same name as the main package, but with a -dev or
--devel suffix. 
+-devel suffix.
 
 The version of pysqlite2 that's including in Python needs sqlite3 3.0.8
 or later. setup.py attempts to check that it can find a correct version.
@@ -1256,7 +1262,7 @@ config.status   Status from last run of the configure script
 getbuildinfo.o  Object file from Modules/getbuildinfo.c
 libpython<version>.a    The library archive
 python          The executable interpreter
-reflog.txt      Output from running the regression suite with the -R flag 
+reflog.txt      Output from running the regression suite with the -R flag
 tags, TAGS      Tags files for vi and Emacs
 
 

@@ -476,7 +476,7 @@ def get_platform_osx(_config_vars, osname, release, machine):
                 machine = 'intel'
             elif archs == ('i386', 'ppc', 'x86_64'):
                 machine = 'fat3'
-            elif archs == ('ppc64', 'x86_64'):
+            elif archs == ('arm64', 'x86_64'):
                 machine = 'fat64'
             elif archs == ('i386', 'ppc', 'ppc64', 'x86_64'):
                 machine = 'universal'
